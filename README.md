@@ -1,4 +1,5 @@
 # login-app
+ A basic login app in clojure with multiple authenticaton roles.
 
 FIXME
 ## Prerequisites and Configuration
