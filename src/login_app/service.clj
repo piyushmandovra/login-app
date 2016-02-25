@@ -16,7 +16,11 @@
 ;;; Regular page handlers. Basic string templates to keep things core
 
 (defn home-page [_]
-  (ring-resp/response "Hello World!"))
+  (ring-resp/response "<html> <a> Default Landing page</a>
+<br> to check auth <a href=\"/login\"> Login</a>
+<br> <a><b>For Admin Role:</b> admin, apass</a>
+<br> <a><b>For Manager Role:</b> manager, mpass</a>
+</html> "))
 
 (defn login-page
   [{{:keys [username]} :params}]

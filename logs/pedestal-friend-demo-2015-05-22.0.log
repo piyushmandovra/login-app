@@ -1,7 +1,0 @@
-
-13:25:05.121 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
-13:25:06.154 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @13055ms
-13:25:06.295 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.0.v20140526
-13:25:06.331 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1c027237{/,null,AVAILABLE}
-13:25:06.346 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6a95477d{HTTP/1.1}{0.0.0.0:8080}
-13:25:06.347 [main] INFO  org.eclipse.jetty.server.Server - Started @13251ms

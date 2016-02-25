@@ -23,7 +23,11 @@
   (ring-resp/status (ring-resp/response "You do not have sufficient privileges to access ") 401))
 
 (defn login-fail [_]
-  (ring-resp/response "Invalid username and password"))
+  (ring-resp/response "<html> <a> Invalid username password</a>
+<br> to retry <a href=\"/login\"> Login</a>
+<br> <a><b>For Admin Role:</b> admin, apass</a>
+<br> <a><b>For Manager Role:</b> manager, mpass</a>
+</html> "))
 
 (def friend-config
   "A friend config for interactive form use."
