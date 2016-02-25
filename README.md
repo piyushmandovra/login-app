@@ -1,7 +1,6 @@
 # login-app
  A basic login app in clojure with multiple authenticaton roles.
 
-FIXME
 ## Prerequisites and Configuration
 1. install jvm. (check process here http://docs.oracle.com/javase/7/docs/webnotes/install/)
 2. install leiningen plugins. (check docs here http://leiningen.org/)
