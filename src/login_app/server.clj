@@ -1,7 +1,7 @@
-(ns pedestal-friend-demo.server
+(ns login-app.server
   (:gen-class) ; for -main method in uberjar
   (:require [io.pedestal.http :as server]
-            [pedestal-friend-demo.service :as service]))
+            [login-app.service :as service]))
 
 ;; This is an adapted service map, that can be started and stopped
 ;; From the REPL you can call server/start and server/stop on this service

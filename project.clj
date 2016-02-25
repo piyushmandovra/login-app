@@ -1,4 +1,4 @@
-(defproject pedestal-friend-demo "0.0.1-SNAPSHOT"
+(defproject login-app "0.0.1-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -21,7 +21,7 @@
                  [com.cemerick/friend "0.2.1" :exclusions [org.clojure/core.cache]]]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]
-  :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "pedestal-friend-demo.server/run-dev"]}
+  :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "login-app.server/run-dev"]}
                    :dependencies [[io.pedestal/pedestal.service-tools "0.4.0"]]}
-             :uberjar {:aot [pedestal-friend-demo.server]}}
-  :main ^{:skip-aot true} pedestal-friend-demo.server)
+             :uberjar {:aot [login-app.server]}}
+  :main ^{:skip-aot true} login-app.server)

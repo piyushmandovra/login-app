@@ -1,3 +1,3 @@
-(ns pedestal-friend-demo.conf)
+(ns login-app.conf)
 
 (def pepper "randomStringToExtraSecurity")

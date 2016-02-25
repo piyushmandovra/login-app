@@ -1,4 +1,4 @@
-(ns pedestal-friend-demo.auth
+(ns login-app.auth
   (:require [io.pedestal.interceptor :refer [interceptor]]
             [io.pedestal.http.ring-middlewares :as middlewares]
             [ring.util.response :as ring-resp]
@@ -7,8 +7,8 @@
              [credentials :as creds]
              [workflows :as workflows]]
             [io.pedestal.log :as log]
-            [pedestal-friend-demo.db :as db]
-            [pedestal-friend-demo.conf :as conf]))
+            [login-app.db :as db]
+            [login-app.conf :as conf]))
 
 (defn peppered-bcrypt-credential-fn
   [load-credentials-fn {:keys [username password]}]

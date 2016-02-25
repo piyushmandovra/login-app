@@ -1,8 +1,8 @@
-(ns pedestal-friend-demo.service-test
+(ns login-app.service-test
   (:require [clojure.test :refer :all]
             [io.pedestal.test :refer :all]
             [io.pedestal.http :as bootstrap]
-            [pedestal-friend-demo.service :as service]))
+            [login-app.service :as service]))
 
 (def service
   (::bootstrap/service-fn (bootstrap/create-servlet service/service)))

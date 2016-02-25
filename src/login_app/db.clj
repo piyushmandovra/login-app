@@ -1,8 +1,8 @@
-(ns pedestal-friend-demo.db
+(ns login-app.db
   (:require [korma
              [db :as kdb]
              [core :as kc]]
-            [pedestal-friend-demo.conf :refer (pepper)]
+            [login-app.conf :refer (pepper)]
             [cemerick.friend.credentials :refer (hash-bcrypt)]))
 
 ;; DB Entity Definitions
@@ -19,8 +19,8 @@
 
 
 (def users (atom {"manager" {:username "manager" :password (hash-bcrypt (str "mpass" pepper))
-                             :roles #{:pedestal-friend-demo.service/manager}}
+                             :roles #{:login-app.service/manager}}
                   "admin" {:username "admin" :password (hash-bcrypt (str "apass" pepper))
-                           :roles #{:pedestal-friend-demo.service/admin}}}))
+                           :roles #{:login-app.service/admin}}}))
 
 (defn get-user-auth [username] (@users username))

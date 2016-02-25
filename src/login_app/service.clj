@@ -1,10 +1,10 @@
-(ns pedestal-friend-demo.service
+(ns login-app.service
   (:require [io.pedestal.http :as bootstrap]
             [io.pedestal.http.route :as route]
             [io.pedestal.http.body-params :as body-params]
             [io.pedestal.http.route.definition :refer [defroutes]]
             [ring.util.response :as ring-resp]
-            [pedestal-friend-demo.auth :as auth]
+            [login-app.auth :as auth]
             [cemerick.friend :as friend]
             [io.pedestal.http.ring-middlewares :as middlewares]
             [ring.middleware.session.cookie :as cookie]))
@@ -80,7 +80,7 @@
 ;; handy routing functions
 (def url-for (route/url-for-routes routes))
 (def form-action (route/form-action-for-routes routes))
-;; Consumed by pedestal-friend-demo.server/create-server
+;; Consumed by login-app.server/create-server
 ;; See bootstrap/default-interceptors for additional options you can configure
 
 (def service {:env :prod

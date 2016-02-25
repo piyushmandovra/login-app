@@ -1,4 +1,4 @@
-# pedestal-friend-demo
+# login-app
 
 FIXME
 
